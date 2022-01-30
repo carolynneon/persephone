@@ -1,0 +1,270 @@
+* {
+  box-sizing: border-box;
+  margin: 0; padding: 0;
+  font-family: "iA Writer Duo S", monospace;
+  font-size: 16px;
+  line-height: 1.5em;
+  margin: 1em 0;
+}
+
+html {
+  margin: 2vw 0 3vw;
+  background: #fff;
+  color: #000;
+}
+
+:root { --filter: invert(0) }
+html.invert { --filter: invert(1) }
+@media (prefers-color-scheme: dark) {
+  :root { --filter: invert(1) }
+  html.invert { --filter: invert(0) }
+}
+
+html, img:not([alt^=Diagram]) { filter: var(--filter) }
+
+#invert {
+  float: right;
+  margin: .2em 0;
+  height: 1em;
+  width: 1em;
+  background: rgba(0,0,0,.27);
+  border-radius: 1em;
+  cursor: pointer;
+}
+#invert:hover {
+  background: #00e;
+}
+#invert::before {
+  content: "";
+  display: block;
+  height: 2em;
+  width: 2em;
+  position: relative;
+  left: -.5em;
+  top: -.5em;
+  border-radius: 1em;
+}
+
+#feed {
+  box-sizing: content-box;
+  display: inline-block;
+  position: relative;
+  height: 1em;
+  width: 1em;
+  margin: -.5em;
+  vertical-align: -.05em;
+  background: #fff;
+  overflow: hidden;
+  outline: 0;
+  border: .5em solid transparent;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+#feed::before {
+  content: "";
+  display: block;
+  height: .8em;
+  width: .8em;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translate(-50%,50%);
+  border-radius: 100%;
+  background: rgba(0,0,0,.27);
+  box-shadow: 0 0 0 .3em #fff, 0 0 0 .6em rgba(0,0,0,.27);
+}
+#feed:hover::before {
+  background: #00e;
+  box-shadow: 0 0 0 .3em #fff, 0 0 0 .6em #00e;
+}
+
+body {
+  position: relative;
+  margin: 2em auto .5em;
+  padding: 0 2em;
+  max-width: 42em;
+}
+
+.header-anchor {
+  float: left;
+  display: inline-block;
+  margin: 0 0 0 -1.2em;
+  font-weight: normal;
+}
+
+/* TODO Details/Summary */
+
+blockquote {
+  padding-left: 1.2em;
+  box-shadow: 2px 0 0 rgba(0,0,0,.2) inset;
+}
+
+ul ul, ul ol, ol ul, ol ol, li { margin: .4em 0 }
+ul { list-style-type: "\2022\A0" }
+ol { padding-left: 1.8em }
+ul ul, ol ul { padding-left: 1.2em }
+ul ol, ol ol { padding-left: 1.8em }
+ol > li:first-child:nth-last-child(n+10),
+ol > li:first-child:nth-last-child(n+10) ~ li {
+  list-style-type: decimal-leading-zero;
+  margin-left: .6em;
+}
+
+hr {
+  border: 0;
+  border-top: 2px solid rgba(0,0,0,.2);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  margin: 1.5em 0;
+}
+
+a {
+  text-decoration: none;
+  color: #00e;
+}
+a:hover { text-decoration: underline }
+a:visited { color: #909 }
+a:active { color: #e00 }
+
+mark {
+  color: #444;
+  background: #444;
+}
+mark:hover {
+  color: #000;
+  background: transparent;
+}
+
+.tag { white-space: nowrap }
+
+nav {
+  position: relative;
+  margin-bottom: 0;
+}
+nav::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+#up, #back, #next, #prev, #first, #last { display: block }
+#next, #prev, #first, #last { width: 50% }
+
+#up {
+  margin: 0;
+  padding: .6em 2em 0 0;
+  position: absolute;
+  top: -1.9em;
+}
+
+#back {
+  float: left;
+  margin: -.5em 0 0 -1.7em;
+  padding: .5em;
+}
+
+#up, #back { color: rgba(0,0,0,.5) }
+#up:hover, #back:hover { color: #00e }
+
+#next, #last {
+  float: right;
+  margin: 0 -1.2em 0 0;
+  text-align: right;
+}
+
+#next + #last { margin: 2em -50% 0 0 }
+#first { margin: .5em 0 0 -1.2em }
+#prev { margin: 0 0 .5em -1.2em }
+
+#end {
+  float: right;
+  margin: .3em .1em 0 .2em;
+  height: .8em;
+  width: .8em;
+  transform: rotate(45deg);
+  box-shadow: 0 0 0 .24em rgba(0,0,0,.27) inset;
+}
+
+/* iA Writer Duo
+** Copyright 2018 Information Architects Inc.
+** License: fonts/LICENSE.txt
+*/
+@font-face {
+  font-family: 'iA Writer Duo S';
+  src: url('fonts/iAWriterDuoS-BoldItalic.woff2') format('woff2'),
+       url('fonts/iAWriterDuoS-BoldItalic.woff')  format('woff');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'iA Writer Duo S';
+  src: url('fonts/iAWriterDuoS-Italic.woff2') format('woff2'),
+       url('fonts/iAWriterDuoS-Italic.woff')  format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'iA Writer Duo S';
+  src: url('fonts/iAWriterDuoS-Bold.woff2') format('woff2'),
+       url('fonts/iAWriterDuoS-Bold.woff')  format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'iA Writer Duo S';
+  src: url('fonts/iAWriterDuoS-Regular.woff2') format('woff2'),
+       url('fonts/iAWriterDuoS-Regular.woff')  format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'iA Writer Duo S';
+  src: url('fonts/iAWriterDuoS-BoldItalic.woff2') format('woff2'),
+       url('fonts/iAWriterDuoS-BoldItalic.woff')  format('woff');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'iA Writer Duo S';
+  src: url('fonts/iAWriterDuoS-Regular.woff2') format('woff2'),
+       url('fonts/iAWriterDuoS-Regular.woff')  format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'iA Writer Duo S';
+  src: url('fonts/iAWriterDuoS-Italic.woff2') format('woff2'),
+       url('fonts/iAWriterDuoS-Italic.woff')  format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'iA Writer Duo S';
+  src: url('fonts/iAWriterDuoS-Bold.woff2') format('woff2'),
+       url('fonts/iAWriterDuoS-Bold.woff')  format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}

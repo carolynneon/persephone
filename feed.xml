@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Personal Log - Elena Brandt</title>
+  <subtitle>The journal of a space case</subtitle>
+  <link href="https://pleb.ahov.co/feed.xml" rel="self"/>
+  <link href="https://pleb.ahov.co/"/>
+  <updated>2022-01-30T04:14:37Z</updated>
+  <id>https://pleb.ahov.co/</id>
+  <author>
+    <name>Alexis Hovorka</name>
+    <!--email>alexisspacegirl@gmail.com</email-->
+  </author>
+  <entry>
+    <title></title>
+    <link href="https://pleb.ahov.co/2103-03-13/"/>
+    <updated>2021-03-13T00:00:00Z</updated>
+    <id>https://pleb.ahov.co/2103-03-13/</id>
+    <content type="html"><![CDATA[<p>I’ve never had a personal log before.  Like, I’ve heard all that stuff about
+how journaling is supposed to be good for you psychologically and whatever, but
+every time I’ve tried to get into it I kept it up for like a week at most.
+Sectan requires us to keep one, though, probably for some baseline morale
+metric, so maybe this time will be different?</p>
+<p>I’m glad it’s encrypted—all they can see is that I’m <em>making</em> entries, and
+roughly how long they are, not what they say. Means I can say whatever shit I
+want and nobody’s the wiser.</p>
+<p>&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;</p>
+<p>×uCfz.VQ£ √ZNX</p>
+]]></content>
+  </entry>
+</feed>
