@@ -95,7 +95,7 @@ main {
   position: relative;
   max-width: 42em;
   margin: 0 auto;
-  padding: 2vw 2em 3vw;
+  padding: 2vw 2em calc(3vw + 1em);
 }
 
 .header-anchor {
