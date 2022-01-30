@@ -1,20 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Personal Log - Elena Brandt</title>
+  <title>Persephone Station Logs</title>
   <subtitle>The journal of a space case</subtitle>
-  <link href="https://pleb.ahov.co/feed.xml" rel="self"/>
-  <link href="https://pleb.ahov.co/"/>
-  <updated>2022-01-30T04:14:37Z</updated>
-  <id>https://pleb.ahov.co/</id>
+  <link href="https://psl.ahov.co/feed.xml" rel="self"/>
+  <link href="https://psl.ahov.co/"/>
+  <updated>2022-01-30T05:25:03Z</updated>
+  <id>https://psl.ahov.co/</id>
   <author>
-    <name>Alexis Hovorka</name>
+    <name>Alexis Hovorka, Amity Fulmer, and Carolynn Chang</name>
     <!--email>alexisspacegirl@gmail.com</email-->
   </author>
   <entry>
-    <title></title>
-    <link href="https://pleb.ahov.co/2103-03-13/"/>
+    <title>2105-03-14 The Station</title>
+    <link href="https://psl.ahov.co/0002/"/>
+    <updated>2022-01-29T00:00:00Z</updated>
+    <id>https://psl.ahov.co/0002/</id>
+    <content type="html"><![CDATA[<p>Blah</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>2105-03-13 Intro</title>
+    <link href="https://psl.ahov.co/0001/"/>
     <updated>2021-03-13T00:00:00Z</updated>
-    <id>https://pleb.ahov.co/2103-03-13/</id>
+    <id>https://psl.ahov.co/0001/</id>
     <content type="html"><![CDATA[<p>I’ve never had a personal log before.  Like, I’ve heard all that stuff about
 how journaling is supposed to be good for you psychologically and whatever, but
 every time I’ve tried to get into it I kept it up for like a week at most.
@@ -24,7 +32,9 @@ metric, so maybe this time will be different?</p>
 roughly how long they are, not what they say. Means I can say whatever shit I
 want and nobody’s the wiser.</p>
 <p>&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;</p>
-<p>×uCfz.VQ£ √ZNX</p>
+<p>cX4<'C$!D <^`€</p>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using ‘Content here, content here’, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for ‘lorem ipsum’ will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
 ]]></content>
   </entry>
 </feed>

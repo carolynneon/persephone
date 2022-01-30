@@ -4,13 +4,16 @@
   font-family: "iA Writer Duo S", monospace;
   font-size: 16px;
   line-height: 1.5em;
+}
+
+main * {
   margin: 1em 0;
 }
 
 html {
-  margin: 2vw 0 3vw;
   background: #fff;
   color: #000;
+  height: 100%;
 }
 
 :root { --filter: invert(0) }
@@ -24,7 +27,7 @@ html, img:not([alt^=Diagram]) { filter: var(--filter) }
 
 #invert {
   float: right;
-  margin: .2em 0;
+  margin: 1.2em 0 0;
   height: 1em;
   width: 1em;
   background: rgba(0,0,0,.27);
@@ -85,9 +88,14 @@ html, img:not([alt^=Diagram]) { filter: var(--filter) }
 
 body {
   position: relative;
-  margin: 2em auto .5em;
-  padding: 0 2em;
+  height: 100%;
+}
+
+main {
+  position: relative;
   max-width: 42em;
+  margin: 0 auto;
+  padding: 2vw 2em 3vw;
 }
 
 .header-anchor {
@@ -162,12 +170,12 @@ nav::after {
   margin: 0;
   padding: .6em 2em 0 0;
   position: absolute;
-  top: -1.9em;
+  top: calc(2vw - 1em);
 }
 
 #back {
   float: left;
-  margin: -.5em 0 0 -1.7em;
+  margin: .5em 0 0 -1.7em;
   padding: .5em;
 }
 
@@ -191,6 +199,23 @@ nav::after {
   width: .8em;
   transform: rotate(45deg);
   box-shadow: 0 0 0 .24em rgba(0,0,0,.27) inset;
+}
+
+#container {
+  position: relative;
+  min-height: 100%;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 8px 0;
+}
+
+footer p, footer p a {
+  font-size: 10px;
 }
 
 /* iA Writer Duo
